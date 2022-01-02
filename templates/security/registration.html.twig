@@ -1,0 +1,16 @@
+<div class="login">
+	<title>Registration</title>
+  <h1>Registration</h1>
+  
+    {{form_start(formUser)}}
+
+    {{form_row(formUser.username, {'attr': {'placeholder': 'username...'}}) }}
+    {{form_row(formUser.email, {'attr': {'placeholder': 'email...'}}) }}
+    {{form_row(formUser.password, {'attr': {'placeholder': 'password...'}}) }}
+    {{form_row(formUser.confirm_password, {'attr': {'placeholder': 'confirm_password...'}}) }}
+
+    <button type="submit" class="btn btn-primary btn-block btn-large">Register</button>
+
+   {{form_end(formUser)}}
+</div>
+<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">

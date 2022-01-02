@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<h2>{{article.nom}}</h2>
+<p><h5>Ecrit le {{article.createdAt | date('d/m/y')}} à {{article.createdAt | date('H:i')}} dans la catégorie {{article.category.title}}</h5></p>
+<p><h6>{{article.prix}} DT</h6><p>
+<p>{{article.description}}<p>
+<a class="btn btn-primary" href="{{path('article')}}">Retour</a>
+<link rel="stylesheet" type="text/css" href="{{asset('css/index.css')}}">
+{% endblock %}
